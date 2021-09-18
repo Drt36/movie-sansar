@@ -1,0 +1,77 @@
+:root {
+    --primary-color: #1CCA5A;
+    --secondary-color: #FFFFFF;
+    --background-color: #050505;
+}
+
+.carousel {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+    margin: 3vh 15vw 3vh 15vw;
+    background-color: var(--background-color);
+}
+
+.carousel img {
+    height: 50vh;
+    width: 40vw;
+    border-radius: 1rem;
+    transition: 0.5s linear;
+    margin: 4vh 12vw 0vh 13.5vw;
+}
+
+.carousel a {
+    top: 23vh;
+    position: absolute;
+    color: var(--secondary-color);
+}
+
+.carousel a:hover {
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.carousel .prev-link {
+    left: 1vw;
+    font-size: 3rem;
+}
+
+.carousel .next-link {
+    right: 1vw;
+    font-size: 3rem;
+}
+
+.loading {
+    font-size: 1.2rem;
+    margin-top: 30vh;
+    font-weight: bold;
+    text-align: center;
+    color: var(--secondary-color);
+    animation: animate 4s infinite;
+}
+
+.error {
+    font-size: 2rem;
+    margin-top: 30vh;
+    font-weight: bold;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+@keyframes animate {
+    0% {
+        font-size: 1.2rem;
+    }
+    25% {
+        font-size: 2rem;
+    }
+    50% {
+        font-size: 1.2rem;
+    }
+    75% {
+        font-size: 2rem;
+    }
+    100% {
+        font-size: 1.2rem;
+    }
+}
