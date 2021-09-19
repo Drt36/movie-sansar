@@ -1,4 +1,4 @@
-.action-wrapper {
+.genre-wrapper {
     padding: 4rem;
     display: flex;
     height: 37vh;
@@ -10,35 +10,35 @@
     background-color: var(--background-color);
 }
 
-.action-wrapper__title {
+.genre-wrapper__title {
     top: 0.5vh;
     left: 4.5vw;
     position: absolute;
     color: var(--hover-color);
 }
 
-.action-prev-link {
+.genre-prev-link {
     top: 20vh;
-    left: 0.5vw;
+    left:1vw;
     font-size: 3rem;
     position: absolute;
     color: var(--secondary-color);
 }
 
-.action-next-link {
-    right: 0.5vw;
+.genre-next-link {
+    right: 1vw;
     top: 20vh;
     font-size: 3rem;
     position: absolute;
     color: var(--secondary-color);
 }
 
-.action-wrapper a:hover {
+.genre-wrapper a:hover {
     cursor: pointer;
     color: var(--primary-color);
 }
 
-.action-loading, .action-error {
+.genre-loading, .genre-error {
     top: 20vh;
     left: 33vw;
     text-align: center;
@@ -47,11 +47,11 @@
     animation: animate 4s infinite;
 }
 
-.action-wrapper .actionlink-wrapper a:hover {
+.genre-wrapper .genrelink-wrapper a:hover {
     color: var(--hover-color);
 }
 
-.action-wrapper .actionlink-wrapper a {
+.genre-wrapper .genrelink-wrapper a {
     right: 4vw;
     bottom: 2vh;
     font-weight: bold;
@@ -60,12 +60,12 @@
     color: var(--secondary-color);
 }
 
-.action-wrapper .actionlink-wrapper a::after {
+.genre-wrapper .genrelink-wrapper a::after {
     content: ">>";
     opacity: 0;
 }
 
-.action-wrapper .actionlink-wrapper a:hover::after {
+.genre-wrapper .genrelink-wrapper a:hover::after {
     opacity: 1;
     transition: 0.5s linear;
 }

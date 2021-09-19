@@ -54,3 +54,20 @@
 .link-right__title {
     color: var(--primary-color);
 }
+
+.link-center{
+    display:flex;
+    flex-direction:column;
+}
+
+.social-links{
+    display: flex;
+    margin-top: 2vh;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+
+.social-links svg{
+    font-size:2rem;
+    color: var(--secondary-color);
+}

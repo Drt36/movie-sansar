@@ -19,15 +19,15 @@ const SliderTopBody = (props) => {
     }
     setMovies({ ...movies });
   };
-  console.log(movieDetails.slice(movies.prev, movies.next));
 
   return (
-    <>
+    <>   
       {movieDetails
         .slice(movies.prev, movies.next)
         .map((currentMovie, index) => {
           return (
             <section className="carousel" key={index}>
+              <h3 className='slider__title'>Recently Added</h3>
               <img
                 className="carousel__img"
                 src={currentMovie.large_cover_image}
@@ -41,14 +41,12 @@ const SliderTopBody = (props) => {
                 ""
               )}
               {movies.next < 4 ? (
-                <a className="next-link" oncl onClick={() => handelNextBtn()}>
+                <a className="next-link" onClick={() => handelNextBtn()}>
                   &#10095;
                 </a>
               ) : (
                 ""
               )}
-
-              <h1>Lorem ipsum </h1>
             </section>
           );
         })}

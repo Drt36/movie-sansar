@@ -10,7 +10,7 @@ const Card = (props) => {
         src={movieDetail.medium_cover_image}
         alt="cover image"
       />
-      <h3 className="card__title">{movieDetail.title_english}</h3>
+      <h3 className="card__title">{movieDetail.title_english.slice(0,25)}</h3>
       <p className="card__rating">
         Rating:{movieDetail.rating}
         <BsStarFill />

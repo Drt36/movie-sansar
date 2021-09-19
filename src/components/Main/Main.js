@@ -1,10 +1,13 @@
 import React from 'react'
-import ActionGenre from './ActionGenre'
+import Genre from './Genre'
 
 const Main = () => {
     return (
         <div>
-            <ActionGenre/>
+            <Genre movies={{genre:'Action',limit:10}} />
+            <Genre movies={{genre:'Crime',limit:10}} />
+            <Genre movies={{genre:'Drama',limit:10}} />
+            <Genre movies={{genre:'Thriller',limit:10}} />
         </div>
     )
 }

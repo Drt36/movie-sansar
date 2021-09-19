@@ -1,9 +1,15 @@
+.slider__title{
+    margin-top:-1vh;
+    text-align: center;
+    font-family: sans-serif;
+    color: var(--secondary-color);
+}
 .carousel {
-    height:55vh;
+    height:57vh;
     padding: 1.5rem;
     border-radius:1rem;
     position: relative;
-    margin: 3vh 13vw 3vh 13vw;
+    margin:12vh 13vw 3vh 13vw;
     background-color: var(--background-color);
 }
 
@@ -11,7 +17,7 @@
     height: 50vh;
     width: 40vw;
     border-radius: 1rem;
-    transition: 0.5s linear;
+    transition: linear;
     margin: 2vh 13vw 0vh 14.5vw;
 }
 
@@ -37,7 +43,7 @@
 }
 
 .loading,.error{
-    height:55vh;
+    height:57vh;
     padding: 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;

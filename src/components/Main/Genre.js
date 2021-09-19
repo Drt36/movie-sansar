@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import Card from "../Card/Card";
-import "./action-genre.css";
+import "./genre.css";
 import { UseMoviesByGenre } from "../services/UseMoviesByGenre";
 import { Link } from "react-router-dom";
 
-const ActionGenre = () => {
-  let genre = "action";
-  let limit = 10;
+const Genre = (props) => {
+  let genre =props.movies.genre;
+  let limit =props.movies.limit;
   const { loading, movieDetails, error } = UseMoviesByGenre(genre, limit);
   const [movies, setMovies] = useState({ prev: 0, next: 4 });
 
@@ -28,10 +28,10 @@ const ActionGenre = () => {
 
   const renderActionGenre = () => {
     if (loading) {
-      return <div className="action-loading">Loading...</div>;
+      return <div className="genre-loading">Loading...</div>;
     }
     if (error) {
-      return <div className="action-error">{error}</div>;
+      return <div className="genre-error">{error}</div>;
     }
 
     return (
@@ -45,29 +45,29 @@ const ActionGenre = () => {
     );
   };
   return (
-    <div className="action-wrapper">
-      <h3 className='action-wrapper__title'>Action</h3>
+    <div className="genre-wrapper">
+      <h3 className='genre-wrapper__title'>{genre}</h3>
       {renderActionGenre()}
 
       {movies.prev > 0 ? (
-        <a className="action-prev-link" onClick={() => handelPrevBtn()}>
+        <a className="genre-prev-link" onClick={() => handelPrevBtn()}>
           &#10094;
         </a>
       ) : (
         ""
       )}
       {movies.next < 10 ? (
-        <a className="action-next-link" onClick={() => handelNextBtn()}>
+        <a className="genre-next-link" onClick={() => handelNextBtn()}>
           &#10095;
         </a>
       ) : (
         ""
       )}
-      <div className='actionlink-wrapper'>
+      <div className='genrelink-wrapper'>
         <Link>See More</Link>
        </div>
     </div>
   );
 };
 
-export default ActionGenre;
+export default Genre;

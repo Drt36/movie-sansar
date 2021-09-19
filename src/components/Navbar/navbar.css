@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
 .nav {
+   
+    top:0vh;
+    z-index:1;
+    width:100vw;
     display: flex;
+    position:fixed;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -28,6 +33,7 @@
 }
 
 .nav__menu li {
+    margin-left:2vw;
     list-style: none;
     font-size: 1.2rem;
     font-family: sans-serif;
@@ -40,7 +46,7 @@
 }
 
 .nav_item a, .nav__subitem a {
-    margin: 5rem;
+    margin:2vw;
     font-size: 1.2rem;
     text-decoration: none;
     font-family: sans-serif;
