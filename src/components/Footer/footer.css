@@ -1,21 +1,14 @@
-:root {
-    --primary-color: #1CCA5A;
-    --secondary-color: #FFFFFF;
-    --background-color: #050505;
-}
-
 .footer {
-    bottom: 0vh;
+    margin-bottom: 0vh;
     width: 100%;
     display: flex;
-    position: absolute;
     justify-content: space-between;
     background-color: var(--background-color);
 }
 
 .link-left {
     display: flex;
-    margin-left: 15vw;
+    margin-left: 13vw;
     margin-bottom: 3vw;
     flex-direction: column;
 }
@@ -26,7 +19,7 @@
 }
 
 .link-right {
-    margin-right: 15vw;
+    margin-right: 13vw;
 }
 
 .link-right li {
@@ -51,7 +44,7 @@
 }
 
 .link-left__list a:hover, .link-right__list a:hover {
-    color: var(--primary-color);
+    color: var(--hover-color)
 }
 
 .link-left__title {

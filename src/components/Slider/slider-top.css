@@ -1,14 +1,9 @@
-:root {
-    --primary-color: #1CCA5A;
-    --secondary-color: #FFFFFF;
-    --background-color: #050505;
-}
-
 .carousel {
+    height:55vh;
     padding: 1.5rem;
-    border-radius: 1rem;
+    border-radius:1rem;
     position: relative;
-    margin: 3vh 15vw 3vh 15vw;
+    margin: 3vh 13vw 3vh 13vw;
     background-color: var(--background-color);
 }
 
@@ -17,7 +12,7 @@
     width: 40vw;
     border-radius: 1rem;
     transition: 0.5s linear;
-    margin: 4vh 12vw 0vh 13.5vw;
+    margin: 2vh 13vw 0vh 14.5vw;
 }
 
 .carousel a {
@@ -41,37 +36,17 @@
     font-size: 3rem;
 }
 
-.loading {
+.loading,.error{
+    height:55vh;
+    padding: 1.5rem;
     font-size: 1.2rem;
-    margin-top: 30vh;
     font-weight: bold;
     text-align: center;
+    border-radius:1rem;
+    position: relative;
+    margin: 3vh 13vw 3vh 13vw;
     color: var(--secondary-color);
     animation: animate 4s infinite;
+    background-color: var(--background-color);
 }
 
-.error {
-    font-size: 2rem;
-    margin-top: 30vh;
-    font-weight: bold;
-    text-align: center;
-    color: var(--secondary-color);
-}
-
-@keyframes animate {
-    0% {
-        font-size: 1.2rem;
-    }
-    25% {
-        font-size: 2rem;
-    }
-    50% {
-        font-size: 1.2rem;
-    }
-    75% {
-        font-size: 2rem;
-    }
-    100% {
-        font-size: 1.2rem;
-    }
-}

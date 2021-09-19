@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
-:root {
-    --primary-color: #1CCA5A;
-    --secondary-color: #FFFFFF;
-    --background-color: #050505;
-}
-
 .nav {
     display: flex;
     flex-direction: row;
@@ -15,13 +9,16 @@
 
 .nav__logo {
     font-size: 2rem;
-    margin-left: 15vw;
-    color: var(--primary-color);
+    margin-left: 13vw;
+    color: var(--hover-color);
     font-family: 'Carattere', cursive;
+}
+.nav__logo:hover{
+   color: var(--hover-color);
 }
 
 .nav-wrapper {
-    margin-right: 15vw;
+    margin-right: 13vw;
 }
 
 .nav__menu {
@@ -55,12 +52,13 @@
 }
 
 .nav_item a:hover, .nav__subitem a:hover {
-    color: var(--primary-color);
+    color: var(--hover-color)
 }
 
 .nav__submenu {
     display: flex;
     display: none;
+    z-index: 1;
     position: absolute;
     border-radius: 0.5rem;
     flex-direction: column;
@@ -75,5 +73,5 @@
 #movies:hover .nav__submenu {
     cursor: pointer;
     display: block;
-    color: var(--primary-color);
+    color: var(--hover-color)
 }
