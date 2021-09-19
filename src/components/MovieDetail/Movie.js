@@ -5,6 +5,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 import RelatedMovies from "./RelatedMovies";
 const Movie = (props) => {
   const movie = props.movie;
+  const torrent = props.torrent;
   const source = `https://www.youtube.com/embed/${movie.yt_trailer_code}`;
 
   return (
@@ -23,7 +24,7 @@ const Movie = (props) => {
             <span className="highlight">Genre:</span>:{movie.genres}
           </p>
           <p className="movie-desc">
-            <span className="highlight">Description:</span>{" "}
+            <span className="highlight">Description:</span>
             {movie.description_full}
           </p>
           <div className="movie-detail__btn-wrapper">
@@ -38,16 +39,13 @@ const Movie = (props) => {
           <iframe src={source}></iframe>
         </div>
       </div>
-      <a
-        target="_blank"
-        href={`https://www.youtube.com/watch?v=nYRnYH92oZc&ab_channel=RawbinnShrestha`}
-      >
+      <a target="_blank" href={torrent.url}>
         <div className="movie-download">
           <p className="movie-download__text">
             <FaCloudDownloadAlt /> Download
           </p>
-          <p className="movie-download__quality">Quality: </p>
-          <p className="movie-download__size">Size: </p>
+          <p className="movie-download__quality">Quality: {torrent.quality} </p>
+          <p className="movie-download__size">Size: {torrent.size}</p>
         </div>
       </a>
 

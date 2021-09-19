@@ -1,5 +1,5 @@
 .movie-detail-wrapper {
-    height: 120vh;
+    height: 125vh;
     padding: 2rem;
     display: flex;
     border-radius: 1rem;
@@ -120,7 +120,7 @@
     background-color: var(--primary-color);
 }
 
-.movie-download p {
+.movie-download p{
     font-size: 1.4rem;
     margin-left: 5vw;
     font-weight: bold;
@@ -138,4 +138,18 @@
     margin-top: 5vh;
     grid-gap: 0.8rem;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.movie-detail-loading, .movie-detail-error {
+    height: 125vh;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 13vh 13vw 3vh 13vw;
+    color: var(--secondary-color);
+    animation: animate 4s infinite;
+    background-color: var(--background-color);
+}
+
+.movie-detail-wrapper a{
+    text-decoration: none;
 }
