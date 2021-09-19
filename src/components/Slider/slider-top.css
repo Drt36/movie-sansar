@@ -51,7 +51,7 @@
     text-align: center;
     border-radius: 1rem;
     position: relative;
-    margin: 3vh 13vw 3vh 13vw;
+    margin: 12vh 13vw 3vh 13vw;
     color: var(--secondary-color);
     animation: animate 4s infinite;
     background-color: var(--background-color);

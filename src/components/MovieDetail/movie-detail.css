@@ -1,0 +1,141 @@
+.movie-detail-wrapper {
+    height: 120vh;
+    padding: 2rem;
+    display: flex;
+    border-radius: 1rem;
+    flex-direction: column;
+    margin: 13vh 13vw 3vh 13vw;
+    background-color: var(--background-color);
+}
+
+.top-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movie-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.movie-name {
+    font-size: 1.5rem;
+    color: var(--hover-color);
+}
+
+.movie-rating {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.movie-rating svg {
+    margin-top: 0.7vh;
+    color: goldenrod;
+    position: absolute;
+}
+
+.movie-duration {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.movie-genre {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.highlight {
+    font-weight: bold;
+    color: var(--hover-color);
+}
+
+.movie-desc {
+    font-size: 1.2rem;
+    padding-right: 3rem;
+}
+
+.movie-desc {
+    color: var(--secondary-color);
+}
+
+.movie-detail__btn-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.movie-video__title {
+    color: var(--secondary-color);
+}
+
+.movie-video iframe {
+    width: 35vw;
+    height: 45vh;
+}
+
+.movie-detail__btn-watch {
+    width: 40%;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.movie-detail__btn-watch:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+}
+
+.movie-detail__btn-watched {
+    width: 40%;
+    margin-right: 3vw;
+    padding: 0.8rem;
+    border-radius: 1rem;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+.movie-detail__btn-watched:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.movie-download {
+    height: 7vh;
+    width: 60%;
+    margin-top: 8vh;
+    display: flex;
+    margin-left: 20%;
+    border-radius: 1rem;
+    flex-direction: row;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+.movie-download:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+}
+
+.movie-download p {
+    font-size: 1.4rem;
+    margin-left: 5vw;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.related-movie-wrapper h3 {
+    margin-top: 5vh;
+    text-align: center;
+    color: var(--hover-color);
+}
+
+.related-movie {
+    display: grid;
+    margin-top: 5vh;
+    grid-gap: 0.8rem;
+    grid-template-columns: repeat(4, 1fr);
+}

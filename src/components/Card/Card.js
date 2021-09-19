@@ -1,10 +1,16 @@
 import React from "react";
 import { BsStarFill } from "react-icons/bs";
+import { useHistory } from "react-router";
 import "./card.css";
 const Card = (props) => {
-  let movieDetail = props.movieDetail;
+  const movieDetail = props.movieDetail;
+  const history=useHistory();
+
+  const handelCardClick=()=>{
+    history.push(`/moviedetail/${movieDetail.id}`);
+  }
   return (
-    <div className="card" key={movieDetail.id}>
+    <div className="card" onClick={()=>handelCardClick()} key={movieDetail.id}>
       <img
         className="card__img"
         src={movieDetail.medium_cover_image}
@@ -17,7 +23,7 @@ const Card = (props) => {
       </p>
       <div className="btn-wrapper">
         <button className="card__btn-watch">+Watchlist</button>
-        <button className="card__btn-watched">watched</button>
+        <button className="card__btn-watched">+Watched</button>
       </div>
     </div>
   );
