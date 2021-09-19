@@ -14,7 +14,7 @@ const Footer = () => {
           <NavLink to={"/crime"}>Crime</NavLink>
         </li>
         <li className="link-left__list">
-          <NavLink to={"/dramma"}>Dramma</NavLink>
+          <NavLink to={"/drama"}>Dramma</NavLink>
         </li>
         <li className="link-left__list">
           <NavLink to={"/thriller"}>Thriller</NavLink>

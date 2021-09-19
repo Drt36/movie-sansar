@@ -1,0 +1,26 @@
+.grid-genre {
+    text-align: center;
+    color: var(--secondary-color);
+    margin: 13vh 13vw 2vh 13vw;
+}
+
+.grid-wrapper {
+    height: 195vh;
+    padding: 2rem;
+    display: grid;
+    grid-gap: 1rem;
+    border-radius: 1rem;
+    margin: 2vh 13vw 3vh 13vw;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: var(--background-color);
+}
+
+.genrelist-loading, .genrelist-error {
+    height: 195vh;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 15vh 13vw 3vh 13vw;
+    color: var(--secondary-color);
+    animation: animate 4s infinite;
+    background-color: var(--background-color);
+}

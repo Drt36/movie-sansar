@@ -19,7 +19,7 @@ export const UseMoviesByGenre = (genre,limit) => {
             return setMovieDetails(data)
         }
         fetchMovieByGenre();
-    }, []);
+    }, [genre]);
     return {loading,movieDetails,error}
 };
 

@@ -38,7 +38,7 @@ const Genre = (props) => {
       <>
         {movieDetails
           .slice(movies.prev, movies.next)
-          .map((currMovie, index) => {
+          .map((currMovie) => {
             return <Card movieDetail={currMovie} />;
           })}
       </>
@@ -64,7 +64,7 @@ const Genre = (props) => {
         ""
       )}
       <div className='genrelink-wrapper'>
-        <Link>See More</Link>
+        <Link to={genre.toLowerCase()}>See More</Link>
        </div>
     </div>
   );

@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="nav-wrapper">
         <ul className="nav__menu">
           <li className="nav_item">
-            <NavLink exact activeClassName="is-active" to={"/home"}>
+            <NavLink exact to={"/"}>
               Home
             </NavLink>
           </li>
@@ -24,7 +24,7 @@ const Navbar = () => {
                 <NavLink to={"/crime"}>Crime</NavLink>
               </li>
               <li className="nav__subitem">
-                <NavLink to={"/dramma"}>Dramma</NavLink>
+                <NavLink to={"/drama"}>Dramma</NavLink>
               </li>
               <li className="nav__subitem">
                 <NavLink to={"/thriller"}>Thriller</NavLink>

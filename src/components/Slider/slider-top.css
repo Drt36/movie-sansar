@@ -1,15 +1,16 @@
-.slider__title{
-    margin-top:-1vh;
+.slider__title {
+    margin-top: -1vh;
     text-align: center;
     font-family: sans-serif;
     color: var(--secondary-color);
 }
+
 .carousel {
-    height:57vh;
+    height: 57vh;
     padding: 1.5rem;
-    border-radius:1rem;
+    border-radius: 1rem;
     position: relative;
-    margin:12vh 13vw 3vh 13vw;
+    margin: 12vh 13vw 3vh 13vw;
     background-color: var(--background-color);
 }
 
@@ -42,17 +43,16 @@
     font-size: 3rem;
 }
 
-.loading,.error{
-    height:57vh;
+.loading, .error {
+    height: 57vh;
     padding: 1.5rem;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    border-radius:1rem;
+    border-radius: 1rem;
     position: relative;
     margin: 3vh 13vw 3vh 13vw;
     color: var(--secondary-color);
     animation: animate 4s infinite;
     background-color: var(--background-color);
 }
-

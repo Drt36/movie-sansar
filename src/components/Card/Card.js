@@ -4,7 +4,7 @@ import "./card.css";
 const Card = (props) => {
   let movieDetail = props.movieDetail;
   return (
-    <div className="card">
+    <div className="card" key={movieDetail.id}>
       <img
         className="card__img"
         src={movieDetail.medium_cover_image}

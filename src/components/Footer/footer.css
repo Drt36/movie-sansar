@@ -71,3 +71,6 @@
     font-size:2rem;
     color: var(--secondary-color);
 }
+.social-links svg:hover{
+    cursor: pointer;
+}
