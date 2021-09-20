@@ -64,7 +64,7 @@ const Genre = (props) => {
         ""
       )}
       <div className='genrelink-wrapper'>
-        <Link to={genre.toLowerCase()}>See More</Link>
+        <Link to={'/movies/'+genre.toLowerCase()}>See More</Link>
        </div>
     </div>
   );

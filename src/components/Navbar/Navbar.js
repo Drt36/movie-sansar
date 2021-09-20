@@ -18,16 +18,16 @@ const Navbar = () => {
             Movies <BsChevronDown />
             <ul className="nav__submenu">
               <li className="nav__subitem">
-                <NavLink to={"/action"}>Action</NavLink>
+                <NavLink to={"/movies/action"}>Action</NavLink>
               </li>
               <li className="nav__subitem">
-                <NavLink to={"/crime"}>Crime</NavLink>
+                <NavLink to={"/movies/crime"}>Crime</NavLink>
               </li>
               <li className="nav__subitem">
-                <NavLink to={"/drama"}>Dramma</NavLink>
+                <NavLink to={"/movies/drama"}>Dramma</NavLink>
               </li>
               <li className="nav__subitem">
-                <NavLink to={"/thriller"}>Thriller</NavLink>
+                <NavLink to={"/movies/thriller"}>Thriller</NavLink>
               </li>
             </ul>
           </li>

@@ -74,3 +74,26 @@
 .social-links svg:hover{
     cursor: pointer;
 }
+
+.terms-privacy{
+    padding:1rem;
+    border-radius:1rem;
+    margin:15vh 13vw 2vh 13vw; 
+    color: var(--secondary-color);
+    background-color:var(--background-color);
+}
+
+.terms-privacy h2{
+    color: var(--hover-color);
+    text-align: center;
+}
+
+.terms-privacy h4{
+    margin:2vh;
+    font-size:1.1rem;
+}
+
+.terms-privacy li{
+    font-size:1.2rem;
+    margin:2vh;
+}

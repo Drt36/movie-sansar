@@ -8,16 +8,16 @@ const Footer = () => {
       <ul className="link-left">
         <h4 className="link-left__title">Quick Links</h4>
         <li className="link-left__list">
-          <NavLink to={"/action"}>Action</NavLink>
+          <NavLink to={"/movies/action"}>Action</NavLink>
         </li>
         <li className="link-left__list">
-          <NavLink to={"/crime"}>Crime</NavLink>
+          <NavLink to={"/movies/crime"}>Crime</NavLink>
         </li>
         <li className="link-left__list">
-          <NavLink to={"/drama"}>Dramma</NavLink>
+          <NavLink to={"/movies/drama"}>Dramma</NavLink>
         </li>
         <li className="link-left__list">
-          <NavLink to={"/thriller"}>Thriller</NavLink>
+          <NavLink to={"/movies/thriller"}>Thriller</NavLink>
         </li>
       </ul>
       <div className='link-center'>
