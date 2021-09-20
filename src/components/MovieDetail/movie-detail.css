@@ -120,7 +120,7 @@
     background-color: var(--primary-color);
 }
 
-.movie-download p{
+.movie-download p {
     font-size: 1.4rem;
     margin-left: 5vw;
     font-weight: bold;
@@ -150,6 +150,8 @@
     background-color: var(--background-color);
 }
 
-.movie-detail-wrapper a{
+.movie-download a {
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
 }

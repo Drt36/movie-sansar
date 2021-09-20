@@ -32,7 +32,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li className="nav_item">
-            <NavLink to={"/watchlist"}>Watchlist</NavLink>
+            <NavLink to={"/watchlist/all"}>Watchlist</NavLink>
           </li>
         </ul>
       </div>

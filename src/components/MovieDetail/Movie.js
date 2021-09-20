@@ -6,6 +6,7 @@ import RelatedMovies from "./RelatedMovies";
 const Movie = (props) => {
   const movie = props.movie;
   const torrent = props.torrent;
+  const description=props.description;
   const source = `https://www.youtube.com/embed/${movie.yt_trailer_code}`;
 
   return (
@@ -25,7 +26,7 @@ const Movie = (props) => {
           </p>
           <p className="movie-desc">
             <span className="highlight">Description:</span>
-            {movie.description_full}
+            {description}
           </p>
           <div className="movie-detail__btn-wrapper">
             <button className="movie-detail__btn-watch">+Watchlist</button>
@@ -39,15 +40,17 @@ const Movie = (props) => {
           <iframe src={source}></iframe>
         </div>
       </div>
-      <a target="_blank" href={torrent.url}>
+      
         <div className="movie-download">
+        <a target="_blank" href={torrent.url}>
           <p className="movie-download__text">
             <FaCloudDownloadAlt /> Download
           </p>
           <p className="movie-download__quality">Quality: {torrent.quality} </p>
           <p className="movie-download__size">Size: {torrent.size}</p>
+         </a>
         </div>
-      </a>
+   
 
       <RelatedMovies id={movie.id} key={movie.id} />
     </div>
