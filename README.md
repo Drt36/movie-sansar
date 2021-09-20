@@ -1,3 +1,62 @@
+<h1>Movie Sansar</h1>
+This is simple torrent movie site made using React JS.
+
+Features:
+<h4>
+  
+1)Recently Added Movie Slider
+  
+2)GenreWise Movie Slider
+  
+3)Genrewise Movie Grid page
+
+4)Movie Detail Page
+
+5)Add TO Watchlist
+
+6)View WatchList
+
+7)Remove from WatchList
+
+8)Mark As Watched
+  
+</h4>
+<h2>Screenshots</h2>
+
+1)Home
+![Landing Page Image](./ms_home.png)
+
+2)Genre Page
+![Genre Page Image](./ms_genre.png)
+
+3)Watchlist
+![Watchlist Page Image](./ms_watchlist.png)
+
+4)Privacy and Terms
+![Landing Page Image](./ms_privacy.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
