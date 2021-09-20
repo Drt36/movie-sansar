@@ -6,9 +6,24 @@ import RelatedMovies from "./RelatedMovies";
 const Movie = (props) => {
   const movie = props.movie;
   const torrent = props.torrent;
-  const description=props.description;
+  const description = props.description;
   const source = `https://www.youtube.com/embed/${movie.yt_trailer_code}`;
+  const [key, setkeys] = useState(Object.keys(localStorage));
+  const watchlist = key.includes("l" + movie.id);
+  const watched = key.includes("w" + movie.id);
 
+  const handelWatchListClick = () => {
+    localStorage.setItem("l" + movie.id, JSON.stringify(movie));
+    setkeys(Object.keys(localStorage));
+  };
+
+  const handelWatchedList = () => {
+    localStorage.setItem("w" + movie.id, JSON.stringify(movie));
+    if (watchlist == true) {
+      localStorage.removeItem("l" + movie.id);
+    }
+    setkeys(Object.keys(localStorage));
+  };
   return (
     <div className="movie-detail-wrapper">
       <div className="top-wrapper">
@@ -28,11 +43,28 @@ const Movie = (props) => {
             <span className="highlight">Description:</span>
             {description}
           </p>
+
           <div className="movie-detail__btn-wrapper">
-            <button className="movie-detail__btn-watch">+Watchlist</button>
-            <button className="movie-detail__btn-watched">
-              Mark as watched
-            </button>
+            {watchlist === true || watched === true ? (
+              " "
+            ) : (
+              <button
+                className="movie-detail__btn-watch"
+                onClick={handelWatchListClick}
+              >
+                Add to Watchlist
+              </button>
+            )}
+            {watched === false ? (
+              <button
+                className="movie-detail__btn-watched"
+                onClick={handelWatchedList}
+              >
+                Mark as watched
+              </button>
+            ) : (
+              ""
+            )}
           </div>
         </div>
         <div className="movie-video">
@@ -40,17 +72,16 @@ const Movie = (props) => {
           <iframe src={source}></iframe>
         </div>
       </div>
-      
-        <div className="movie-download">
+
+      <div className="movie-download">
         <a target="_blank" href={torrent.url}>
           <p className="movie-download__text">
             <FaCloudDownloadAlt /> Download
           </p>
           <p className="movie-download__quality">Quality: {torrent.quality} </p>
           <p className="movie-download__size">Size: {torrent.size}</p>
-         </a>
-        </div>
-   
+        </a>
+      </div>
 
       <RelatedMovies id={movie.id} key={movie.id} />
     </div>

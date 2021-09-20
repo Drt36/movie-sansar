@@ -1,21 +1,16 @@
-.watchlist-wrapper{
-    display:grid;
-    height:auto;
-    padding:2rem;
-    border-radius:1rem;
-    margin:15vh 13vw 5vh 13vw;
-    background-color:var(--background-color);
-    grid-template-columns:repeat(4,1fr);
+.watchlist-wrapper {
+    display: grid;
+    grid-gap:1rem;
+    height: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin: 2vh 13vw 5vh 13vw;
+    background-color: var(--background-color);
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.watchlist-noresult{
-    height:30vh;
-    padding:2rem;
-    font-size:2rem;
+.watchlist__title {
     text-align: center;
-    border-radius:1rem;
-    margin:15vh 13vw 5vh 13vw;
-    color:var(--secondary-color);
-    animation: animate 4s infinite;
-    background-color:var(--background-color);
+    margin-top: 13vh;
+    color: var(--secondary-color);
 }

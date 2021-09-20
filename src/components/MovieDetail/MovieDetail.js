@@ -6,7 +6,8 @@ import Movie from "./Movie";
 
 const MovieDetail = (props) => {
   const movieId = props.match.params.movieId;
-  const { movie, loading, error,torrent,description} = useMovieDetail(movieId);
+  const { movie, loading, error, torrent, description } =
+    useMovieDetail(movieId);
 
   const renderMovieDetail = () => {
     if (loading) {
