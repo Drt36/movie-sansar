@@ -35,6 +35,10 @@ Features:
 4)Privacy and Terms
 ![Landing Page Image](./ms_privacy.png)
 
+5)Movie Detail
+![Landing Page Image](./ms_detail.png)
+
+
 
 
 
